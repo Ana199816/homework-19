@@ -11,7 +11,7 @@ This application requires the use of React for creating individual components, m
 * An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter  employees by name.
 
 <br>
-  <img src="assets/directory1.jpg">
+  <img src="assets/directory1.png">
   <br>
-  <img src="/assets/directory2.jpg">
+  <img src="/assets/directory2.png">
   
