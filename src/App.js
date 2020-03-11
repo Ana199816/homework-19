@@ -5,7 +5,7 @@ import Header from './Header/Header';
 
 
 
-class App extends Component {
+class App extends Component  {
   state = {
     users: [
       {
@@ -32,7 +32,8 @@ class App extends Component {
         email: "joe.jacson@learningcontainer.com",
         dob: "07-23-2000"
       }
-    ]
+    ],
+    search : ""
   }
 
   updateSearch = (event) => {
@@ -40,9 +41,10 @@ class App extends Component {
   }
 
   render() {
+    console.log('this', this)
     let filteredUsers = this.state.users.filter(
       (users) => {
-        return ((users.name).toLowerCase()).indexOf((this.state.search).toLowerCase()) !== -1;
+        return (users.name.toLowerCase()).indexOf(this.state.search.toLowerCase()) !== -1;
       }
     );
 
