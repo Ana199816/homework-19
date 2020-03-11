@@ -42,7 +42,7 @@ class App extends Component {
   render() {
     let filteredUsers = this.state.users.filter(
       (users) => {
-        return users.name.indexOf(this.state.search) !== -1;
+        return ((users.name).toLowerCase()).indexOf((this.state.search).toLowerCase()) !== -1;
       }
     );
 
